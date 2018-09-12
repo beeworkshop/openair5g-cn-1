@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#cd /usr/local/bin
+sudo -S -E /usr/local/bin/esm

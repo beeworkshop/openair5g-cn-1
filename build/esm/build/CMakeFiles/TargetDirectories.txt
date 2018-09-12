@@ -1,0 +1,3 @@
+/home/dukl/openair5g-cn/build/esm/build/CMakeFiles/edit_cache.dir
+/home/dukl/openair5g-cn/build/esm/build/CMakeFiles/rebuild_cache.dir
+/home/dukl/openair5g-cn/build/esm/build/CMakeFiles/esm.dir

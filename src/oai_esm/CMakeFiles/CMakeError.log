@@ -1,0 +1,427 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1c86b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1c86b.dir/build.make CMakeFiles/cmTC_1c86b.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_1c86b.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1c86b.dir/CheckSymbolExists.c.o   -c /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_1c86b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c86b.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_1c86b.dir/CheckSymbolExists.c.o  -o cmTC_1c86b -rdynamic 
+CMakeFiles/cmTC_1c86b.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1c86b.dir/build.make:97: recipe for target 'cmTC_1c86b' failed
+make[1]: *** [cmTC_1c86b] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1c86b/fast' failed
+make: *** [cmTC_1c86b/fast] Error 2
+
+File /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_12444/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12444.dir/build.make CMakeFiles/cmTC_12444.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_12444.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_12444.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_12444
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12444.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_12444.dir/CheckFunctionExists.c.o  -o cmTC_12444 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_12444.dir/build.make:97: recipe for target 'cmTC_12444' failed
+make[1]: *** [cmTC_12444] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_12444/fast' failed
+make: *** [cmTC_12444/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac9cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac9cb.dir/build.make CMakeFiles/cmTC_ac9cb.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_ac9cb.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ac9cb.dir/CheckSymbolExists.c.o   -c /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_ac9cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac9cb.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_ac9cb.dir/CheckSymbolExists.c.o  -o cmTC_ac9cb -rdynamic 
+CMakeFiles/cmTC_ac9cb.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ac9cb.dir/build.make:97: recipe for target 'cmTC_ac9cb' failed
+make[1]: *** [cmTC_ac9cb] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ac9cb/fast' failed
+make: *** [cmTC_ac9cb/fast] Error 2
+
+File /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7cc24/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7cc24.dir/build.make CMakeFiles/cmTC_7cc24.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_7cc24.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7cc24.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_7cc24
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cc24.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_7cc24.dir/CheckFunctionExists.c.o  -o cmTC_7cc24 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7cc24.dir/build.make:97: recipe for target 'cmTC_7cc24' failed
+make[1]: *** [cmTC_7cc24] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7cc24/fast' failed
+make: *** [cmTC_7cc24/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25dd6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25dd6.dir/build.make CMakeFiles/cmTC_25dd6.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_25dd6.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_25dd6.dir/CheckSymbolExists.c.o   -c /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_25dd6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25dd6.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_25dd6.dir/CheckSymbolExists.c.o  -o cmTC_25dd6 -rdynamic 
+CMakeFiles/cmTC_25dd6.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_25dd6.dir/build.make:97: recipe for target 'cmTC_25dd6' failed
+make[1]: *** [cmTC_25dd6] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_25dd6/fast' failed
+make: *** [cmTC_25dd6/fast] Error 2
+
+File /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e59df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e59df.dir/build.make CMakeFiles/cmTC_e59df.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_e59df.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e59df.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_e59df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e59df.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e59df.dir/CheckFunctionExists.c.o  -o cmTC_e59df -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e59df.dir/build.make:97: recipe for target 'cmTC_e59df' failed
+make[1]: *** [cmTC_e59df] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e59df/fast' failed
+make: *** [cmTC_e59df/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2db6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2db6c.dir/build.make CMakeFiles/cmTC_2db6c.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_2db6c.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_2db6c.dir/CheckSymbolExists.c.o   -c /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_2db6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2db6c.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_2db6c.dir/CheckSymbolExists.c.o  -o cmTC_2db6c -rdynamic 
+CMakeFiles/cmTC_2db6c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2db6c.dir/build.make:97: recipe for target 'cmTC_2db6c' failed
+make[1]: *** [cmTC_2db6c] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2db6c/fast' failed
+make: *** [cmTC_2db6c/fast] Error 2
+
+File /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5e1f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e1f6.dir/build.make CMakeFiles/cmTC_5e1f6.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_5e1f6.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5e1f6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_5e1f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e1f6.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5e1f6.dir/CheckFunctionExists.c.o  -o cmTC_5e1f6 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5e1f6.dir/build.make:97: recipe for target 'cmTC_5e1f6' failed
+make[1]: *** [cmTC_5e1f6] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5e1f6/fast' failed
+make: *** [cmTC_5e1f6/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eff19/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eff19.dir/build.make CMakeFiles/cmTC_eff19.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_eff19.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_eff19.dir/CheckSymbolExists.c.o   -c /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_eff19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eff19.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_eff19.dir/CheckSymbolExists.c.o  -o cmTC_eff19 -rdynamic 
+CMakeFiles/cmTC_eff19.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eff19.dir/build.make:97: recipe for target 'cmTC_eff19' failed
+make[1]: *** [cmTC_eff19] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eff19/fast' failed
+make: *** [cmTC_eff19/fast] Error 2
+
+File /home/dukl/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f716/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f716.dir/build.make CMakeFiles/cmTC_0f716.dir/build
+make[1]: Entering directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_0f716.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0f716.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_0f716
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f716.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0f716.dir/CheckFunctionExists.c.o  -o cmTC_0f716 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0f716.dir/build.make:97: recipe for target 'cmTC_0f716' failed
+make[1]: *** [cmTC_0f716] Error 1
+make[1]: Leaving directory '/home/dukl/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0f716/fast' failed
+make: *** [cmTC_0f716/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8351f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8351f.dir/build.make CMakeFiles/cmTC_8351f.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_8351f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_8351f.dir/CheckSymbolExists.c.o   -c /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_8351f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8351f.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_8351f.dir/CheckSymbolExists.c.o  -o cmTC_8351f -rdynamic 
+CMakeFiles/cmTC_8351f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8351f.dir/build.make:97: recipe for target 'cmTC_8351f' failed
+make[1]: *** [cmTC_8351f] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8351f/fast' failed
+make: *** [cmTC_8351f/fast] Error 2
+
+File /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd034/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd034.dir/build.make CMakeFiles/cmTC_bd034.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_bd034.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_bd034.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_bd034
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd034.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_bd034.dir/CheckFunctionExists.c.o  -o cmTC_bd034 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_bd034.dir/build.make:97: recipe for target 'cmTC_bd034' failed
+make[1]: *** [cmTC_bd034] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bd034/fast' failed
+make: *** [cmTC_bd034/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_acfce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_acfce.dir/build.make CMakeFiles/cmTC_acfce.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_acfce.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_acfce.dir/CheckSymbolExists.c.o   -c /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_acfce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acfce.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc       CMakeFiles/cmTC_acfce.dir/CheckSymbolExists.c.o  -o cmTC_acfce -rdynamic 
+CMakeFiles/cmTC_acfce.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_acfce.dir/build.make:97: recipe for target 'cmTC_acfce' failed
+make[1]: *** [cmTC_acfce] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_acfce/fast' failed
+make: *** [cmTC_acfce/fast] Error 2
+
+File /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_db884/fast"
+/usr/bin/make -f CMakeFiles/cmTC_db884.dir/build.make CMakeFiles/cmTC_db884.dir/build
+make[1]: Entering directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_db884.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_db884.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_db884
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db884.dir/link.txt --verbose=1
+/usr/bin/cmake: /usr/local/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_db884.dir/CheckFunctionExists.c.o  -o cmTC_db884 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_db884.dir/build.make:97: recipe for target 'cmTC_db884' failed
+make[1]: *** [cmTC_db884] Error 1
+make[1]: Leaving directory '/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_db884/fast' failed
+make: *** [cmTC_db884/fast] Error 2
+
+

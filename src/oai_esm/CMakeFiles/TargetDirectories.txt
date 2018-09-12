@@ -1,0 +1,3 @@
+/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/edit_cache.dir
+/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/rebuild_cache.dir
+/home/dukl/openair5g-cn/src/oai_esm/CMakeFiles/esm.dir
